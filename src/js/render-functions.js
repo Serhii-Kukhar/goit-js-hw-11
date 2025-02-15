@@ -11,10 +11,10 @@ export function imageTemplate(image) {
     const { webformatURL, largeImageURL, tags, likes, views, comments, downloads } = image;
     return `
         <li class="gallery-item">
-            <a href="${largeImageURL}">
-                <img class="image" src="${webformatURL}" alt="${tags}"  width="360" />
+            <a href="${largeImageURL}" class="gallery-link">
+                <img class="image" src="${webformatURL}" alt="${tags}" class="gallery-img" width="360"/>
             </a>
-            <ul class="info-list">  
+            <ul class="info-list">
                 <li class="info-item">
                     <h4 class="info-title">Likes</h4>
                     <p class="info-descr">${likes}</p>
